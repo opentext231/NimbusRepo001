@@ -12,8 +12,10 @@
 	<Notes/>
 	<ExposeForReuse>false</ExposeForReuse>
 	<IsAbstract>false</IsAbstract>
+	<IsEisNativeEntity>false</IsEisNativeEntity>
 	<IsExternallyManaged>false</IsExternallyManaged>
 	<IsSingleton>false</IsSingleton>
+	<RepositoryConnectionId></RepositoryConnectionId>
 	<TableName></TableName>
 	<BuildingBlocks>
 		<uri
@@ -1607,6 +1609,7 @@
 		</PropertyBuildingBlock>
 		<TrackingBuildingBlock
 			type="com.cordys.entity.buildingblocks.tracking.TrackingBuildingBlock"
+			typeVersion="E71CDA2C-7846-4CDA-BCB3-A75D3AD4A9FE"
 			RuntimeDocumentID="005056A5-1B45-A1EB-A7B6-B0C1D826E320">
 			<DocumentID>005056A5-1B45-A1EB-A7B6-B0C1D826A320</DocumentID>
 			<Name>Tracking</Name>
@@ -1900,10 +1903,65 @@
 						/>
 					</Target>
 				</Relationship>
+				<Relationship
+					type="com.cordys.entity.core.structure.relationship.Relationship"
+					typeVersion="17A97EEB-DDB4-477D-8C9F-C9238015F2A2"
+					RuntimeDocumentID="28DFEB6B-98A5-A1EE-AAEA-74265A02C9E2">
+					<DocumentID>48F1DF28-442C-31AA-8B02-268A9CBF444F</DocumentID>
+					<Name>ReadBy</Name>
+					<Description>ReadBy</Description>
+					<CreatedBy>ouathuser1@AWP</CreatedBy>
+					<CreationDate>2024-01-05T09:08:03.508</CreationDate>
+					<Notes/>
+					<ExposeForReuse>false</ExposeForReuse>
+					<HasFK>false</HasFK>
+					<MaxCardinality>-1</MaxCardinality>
+					<MinCardinality>0</MinCardinality>
+					<OwnsJoinTable>true</OwnsJoinTable>
+					<RelationshipType>ToPeer</RelationshipType>
+					<RestrictDeleteTarget>false</RestrictDeleteTarget>
+					<BuildingBlock>
+						<uri
+							id="005056A5-1B45-A1EB-A7B6-B0C1D826A320"
+						/>
+					</BuildingBlock>
+					<DisplayName/>
+					<ForeignKeyProperties>
+						<uri
+							id="62C74635-42FF-3B0F-B4E0-B9B89B8A1F9F"
+						/>
+					</ForeignKeyProperties>
+					<Inverse/>
+					<Original/>
+					<ReferringProperties>
+						<ReferringProperty
+							type="com.cordys.entity.core.structure.relationship.ReferringProperty"
+							RuntimeDocumentID="28DFEB6B-98A5-A1EE-AAEA-74265A0309E2">
+							<DocumentID>62C74635-42FF-3B0F-B4E0-B9B89B8A1F9F</DocumentID>
+							<Name>ReadBy_Id</Name>
+							<Description>ReadBy_Id</Description>
+							<CreatedBy>ouathuser1@AWP</CreatedBy>
+							<CreationDate>2024-01-05T09:08:27.707</CreationDate>
+							<Notes/>
+							<NameIsExternallyManaged>false</NameIsExternallyManaged>
+							<TargetProperty>
+								<uri
+									id="F8B156B4-FF8F-11E6-E6F1-BB7823D79319"
+								/>
+							</TargetProperty>
+						</ReferringProperty>
+					</ReferringProperties>
+					<Target>
+						<uri
+							id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
+						/>
+					</Target>
+				</Relationship>
 			</Relationships>
 			<Tracking>
 				<Tracking
 					type="com.cordys.entity.buildingblocks.tracking.Tracking"
+					typeVersion="EEA67FA8-049B-498D-A635-D0A9B48E2456"
 					RuntimeDocumentID="005056A5-1B45-A1EB-A7B6-B0C1D8266320">
 					<DocumentID>005056A5-1B45-A1EB-A7B6-B0C1D8262320</DocumentID>
 					<Name>Tracking</Name>
@@ -1912,6 +1970,7 @@
 					<CreationDate>2021-04-16T17:41:04.306</CreationDate>
 					<Notes/>
 					<ParentAlso>false</ParentAlso>
+					<ReadBy>false</ReadBy>
 					<BuildingBlock>
 						<uri
 							id="005056A5-1B45-A1EB-A7B6-B0C1D826A320"
@@ -1922,7 +1981,7 @@
 		</TrackingBuildingBlock>
 		<SecurityBuildingBlock
 			type="com.cordys.entity.buildingblocks.security.SecurityBuildingBlock"
-			typeVersion="E6399B50-B4CA-4A3B-B58F-BD56B1BDFEA2"
+			typeVersion="6294039D-E23A-48B1-8047-1C7EFC55AF03"
 			RuntimeDocumentID="c26397ed-6bcc-34a7-94ab-47d9057a8209">
 			<DocumentID>005056A5-1B45-A1EB-A7B6-FACD3976A320</DocumentID>
 			<Name>Security</Name>
